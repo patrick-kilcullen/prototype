@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archived Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .archive-list {
+            list-style: none;
+            padding: 0;
+        }
+        .archive-item {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+        }
+        .archive-item h3 {
+            margin: 0 0 10px;
+        }
+        .archive-item p {
+            margin: 5px 0;
+        }
+        .archive-item a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .archive-item a:hover {
+            text-decoration: underline;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Archived Questions</h1>
+    </header>
+    <nav>
+        <a href="login.html">Login</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="create_ticket.html">Create Ticket</a>
+        <a href="archive.html">Search Archive</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+    <div class="container">
+        <!-- Search Form -->
+        <form>
+            <div class="form-group">
+                <label for="search">Search Archived Questions</label>
+                <input type="text" id="search" name="search" placeholder="Search by keyword, category, or industry">
+            </div>
+            <div class="form-group">
+                <label for="filter">Filter by Category</label>
+                <select id="filter" name="filter">
+                    <option value="all">All Categories</option>
+                    <option value="network-security">Network Security</option>
+                    <option value="data-protection">Data Protection</option>
+                    <option value="phishing">Phishing</option>
+                    <option value="ransomware">Ransomware</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Search</button>
+        </form>
+
+        <!-- Archived Questions List -->
+        <ul class="archive-list">
+            <li class="archive-item">
+                <h3>How to protect against phishing attacks?</h3>
+                <p><strong>Category:</strong> Phishing</p>
+                <p><strong>Answered by:</strong> CyberExpert1</p>
+                <p><strong>Summary:</strong> Always verify email sources and avoid clicking unknown links. Implement email filtering solutions.</p>
+                <a href="#">Read Full Answer</a>
+            </li>
+            <li class="archive-item">
+                <h3>Best practices for data encryption</h3>
+                <p><strong>Category:</strong> Data Protection</p>
+                <p><strong>Answered by:</strong> CyberExpert2</p>
+                <p><strong>Summary:</strong> Use strong encryption standards like AES-256 and manage keys securely.</p>
+                <a href="#">Read Full Answer</a>
+            </li>
+            <li class="archive-item">
+                <h3>Steps to recover from a ransomware attack</h3>
+                <p><strong>Category:</strong> Ransomware</p>
+                <p><strong>Answered by:</strong> CyberExpert3</p>
+                <p><strong>Summary:</strong> Disconnect infected systems, restore from backups, and notify authorities.</p>
+                <a href="#">Read Full Answer</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
