@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe Design</title>
+    <title>Wireframe - Main</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -81,103 +81,17 @@
     </style>
 </head>
 <body>
-    <!-- Login Page -->
-    <header>
-        <h1>Login</h1>
-    </header>
-    <div class="container">
-        <form>
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username">
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password">
-            </div>
-            <div>
-                <button class="btn" type="submit">Login</button>
-            </div>
-        </form>
-    </div>
-
-    <!-- Ticket Dashboard -->
-    <header>
-        <h1>Ticket Dashboard</h1>
-    </header>
-    <div class="container">
-        <form>
-            <div class="form-group">
-                <label for="ticket-search">Search Tickets</label>
-                <input type="text" id="ticket-search" name="ticket-search" placeholder="Search by ticket ID or keyword">
-            </div>
-        </form>
-        <div class="dashboard">
-            <div class="ticket">
-                <h3>Ticket #12345</h3>
-                <p>Status: Open</p>
-                <p>Description: Issue with login functionality.</p>
-                <a href="#" class="btn">View Ticket</a>
-            </div>
-            <div class="ticket">
-                <h3>Ticket #12346</h3>
-                <p>Status: In Progress</p>
-                <p>Description: Error in report generation.</p>
-                <a href="#" class="btn">View Ticket</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Ticket Creation -->
-    <header>
-        <h1>Create a Ticket</h1>
-    </header>
-    <div class="container">
-        <form>
-            <div class="form-group">
-                <label for="title">Ticket Title</label>
-                <input type="text" id="title" name="title" placeholder="Enter ticket title">
-            </div>
-            <div class="form-group">
-                <label for="description">Description</label>
-                <textarea id="description" name="description" placeholder="Enter ticket description" rows="5"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="priority">Priority</label>
-                <select id="priority" name="priority">
-                    <option value="low">Low</option>
-                    <option value="medium">Medium</option>
-                    <option value="high">High</option>
-                </select>
-            </div>
-            <div>
-                <button class="btn" type="submit">Create Ticket</button>
-            </div>
-        </form>
-    </div>
-
-    <!-- Open Ticket View -->
-    <header>
-        <h1>Ticket #12345</h1>
-    </header>
-    <div class="container">
-        <p><strong>Status:</strong> Open</p>
-        <p><strong>Description:</strong> Issue with login functionality.</p>
-        <p><strong>Priority:</strong> High</p>
-        <button class="btn">Close Ticket</button>
-    </div>
-
-    <!-- Admin Dashboard -->
-    <header>
-        <h1>Admin Dashboard</h1>
-    </header>
-    <div class="container admin-options">
+    <nav>
         <ul>
-            <li><a href="#">View All Tickets</a></li>
-            <li><a href="#">Manage Users</a></li>
-            <li><a href="#">Generate Reports</a></li>
-            <li><a href="#">System Settings</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="dashboard.html">Ticket Dashboard</a></li>
+            <li><a href="create_ticket.html">Create Ticket</a></li>
+            <li><a href="open_ticket.html">Open Ticket</a></li>
+            <li><a href="admin.html">Admin Dashboard</a></li>
         </ul>
-    </div>
+    </nav>
+    <header>
+        <h1>Welcome to the Wireframe Application</h1>
+    </header>
 </body>
 </html>
