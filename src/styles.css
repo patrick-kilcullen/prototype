@@ -110,3 +110,28 @@ nav a:hover {
     border-radius: 4px;
     font-size: 14px;
 }
+
+/* Post Styles */
+.post {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+.post p {
+    margin: 0 0 5px;
+}
+.post .timestamp {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Post Search */
+#post-search {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
